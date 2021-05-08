@@ -1,0 +1,166 @@
+/* tema 9 Texto 
+ *
+ * Tipografia. La disciplina (area o carrera) que estudia el design 
+ * y uso de tipos de letra
+ *
+ *
+ * Fuente. Un tipo especifico de letra, que ha sido creado por un 
+ * designer o por una empresa.
+ *
+ *
+ * Glifos. Son los dibujos que representan a cada caracter de la 
+ * fuente. 
+ *
+ *
+ * Estilos de fuente. Son las variaciones de una misma fuente(grosor, inclinacion).
+ *
+ *
+ * Familia tipografica. Son varias fuentes con caracteristicas comunes.
+ *
+ * 
+ * */
+
+
+/* Unidades de medida: em y rem
+ *
+ * font-size: 1.5rem
+ * 
+ * 1rem = 16px (siempre que no cambies el font-size de :root)
+ * 16px * 3rem = 48px
+ * 1em = 100% del size de fuente del contexto
+ * */
+
+h1{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+span{
+  font-size: 1.5em;
+  /* para margenes y padding recomendado para mantener la relacion de los size  */
+}
+
+/*  El span en el h1 mide 3rem * 1.5 
+ *  El span en p mide 2rem * 1.5
+ *
+ *
+ *  */
+
+.button{
+  background: hsl(200, 80%, 45%);
+  color: #fff;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: .25em;
+  font-size: 4rem;
+  
+}
+
+
+
+/* 9.3 Estilos basicos de texto */
+
+p{
+  border: 1px solid #000;
+  background: #eee;
+  padding: .5em;
+}
+
+
+h1{
+  /* text-align: center; */
+  line-height: 1.3;
+}
+
+
+p{
+
+  /* font-size: 2rem; */
+
+  /* font-style: italic; */
+  /* Estilo de la fuente */
+
+  /* font-weight: bold; */
+  /* El grosor de la fuente  */
+
+  /* text-align: center; */
+  /* Alinacion de texto text-align*/
+
+  line-height: 1.6;
+  /* Altura de la linea se multiplica con el size de la fuente */
+
+  /* text-decoration: underline; */
+  /* Darle un subrayado */
+  /* text-decoration: line-through; */
+  /* O podemos tachar el texto aplica para descuentos o algo que ya no se puede usar*/
+  
+  /* text-transform: uppercase; */
+  /* nos permite transformar las mayusculas y las minusculas */
+  /* uppercase para transformar todo a mayuscula */
+  /* text-transform: lowercase; */
+  /* lowercase  es todo miniscula*/
+  /* text-transform: capitalize; */
+  /*la primera letra sea mayuscula */
+
+
+  /* letter-spacing: 0.05em ; */
+  /* Permite crear una separacion desde las letras 
+   * sirve para dar efectos de design
+   * */
+
+  /* word-spacing: 1em; */
+  /* Permite crear espacios entre palabras */
+
+
+}
+
+
+/* 9.4 Font Family
+ *
+ * Regla @font-face
+ *
+ * */
+
+
+
+h1{
+  /* font-family: 'Dancing Script', cursive; */
+  /* Sirve para declarar el tipo de letra, la segunda opcion es si falla 
+   * la primera opcion  */
+
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+
+}
+
+
+/* 9.5 Sombras de texto*/
+
+p{
+  font-family:'Open Sans';
+  color: #FFF;
+  /* Tipo de letra se busca en el sistema operativo */
+  background: hsl(200, 10%, 30%);
+  /* text-shadow: x y blur color, x y blur color; */
+
+  text-shadow: 1px 1px 0 #000;
+
+
+}
+
+h1{
+  text-shadow: 1px 1px 2px #000;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+

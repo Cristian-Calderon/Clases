@@ -1,0 +1,6 @@
+body{
+  background: url(playa.jpeg), url(carretera.jpeg), url(faro.jpeg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 0 0, center center, right bottom;
+}

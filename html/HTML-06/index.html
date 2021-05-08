@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+        border: 1px solid #333;
+        padding: .5em;
+        }
+        th{
+            background: #333;
+            color: #fff;
+        }
+        caption{
+            padding-bottom: .5em;
+        }
+
+        .col-1{
+            background: pink;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--
+        <table></table> para marcar la tabla
+        <tr></tr> table row (para cada fila)
+        <td></td> Table data (para cada celda)
+        <th></th> Table head (Son celdas de cabecera)
+    
+
+        Atributos para agrupacion de filas y columanas
+        colspan = N
+        rowspan = N
+
+    -->
+
+
+    <table> 
+            <caption>Horario Semanal de clases EDteam</caption>
+        <thead>
+            <colgroup>
+                <col class="col-1">
+                <col class="col-2">
+                <col class="col-3">
+                <col class="col-4">
+                <col style="background: yellow;"> 
+            </colgroup>
+
+        <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+    </thead>
+<tbody>
+        <tr>
+            <td colspan="2">HTML</td>
+            <td rowspan="2">Algoritmos</td>
+            <td>Photoshop</td>
+            <td>Marketing digital</td>
+            
+            </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>CSS</td>
+            <td>Java</td>
+            <td>UX Design</td>
+            
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="4">Total de cursos</td>
+            <td>7 Cursos</td>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 - Enlaces y listas</title>
+  </head>
+  <body>
+    <!-- Arquitectura cliente servidor
+        Arquitectura: la forma en que están estructurados los componentes
+        de un sistema.
+        Cliente: El dispositivo que solicita la página web.
+        Servidor: Es el hardware y software que almancena y entrega
+        la página web y sus componentes.
+    -->
+    <h1>Hola EDteam</h1>
+    <!--
+      Enlaces 
+      Se crean con la etiqueta a (anchor) 
+      y necesitan el atributo obligatorio href
+
+    -->
+    <p>
+    <a href="https://ed.team/">Ir a EDteam</a>
+    </p>
+    
+    <!--
+    Atributo opcional    
+      target="_blank" nueva pestaña
+      rel="nofollow" (no transmite SEO)
+      rel="noreference" (no indica al destino el origen del link)
+      rel="noopener" (evita la incrustacion de codigo malicioso al abrir enlaces en nuevas pestañas)
+      download (descarga el recurso 
+      en lugar de abrirlo en el navegador)
+    -->
+
+    <p>
+      <a href="http://ed.team" target="_blank">Ir a EDteam nueva pestaña</a>
+    </p>
+  
+    <p>
+      <a href="goku.jpeg" download>Imagen de Goku</a>
+    </p>
+
+    <!-- Rutas absolutas y relativas
+      
+      1. Rutas absolutas
+      * Tienen protocolo (http o https) y son unicas
+      * Se usan para rutas externas
+
+      2. Rutas relativas
+      * Se usan para rutas internas del proyecto
+      * No usa protocolo
+      * Se debe navegar hacia el destino de la siguiente manera:
+        - Si el recurso esta en la misma carpeta se escribe su nombre y extensión.
+          goku.jpg
+        - Si el recurso está en una carpeta por encima:
+          ../goku.jpg
+        - Si el recurso esta en una carpeta por debajo:
+          img/goku.jpg
+
+      3. Rutas relativas a la raíz
+      * Se construyen a partir de la carpeta raíz del proyecto
+      * Empieza siempre con / (simbolo para representar la raíz del proyecto) 
+    -->
+
+<p><a href="img/personajes/goku.jpeg">Goku</a></p>
+
+<p><a href="/Pruebarutas/imagenes.html">Ir a imagenes</a></p>
+
+<p><a href="/Pruebarutas/marcadores.html">Marcadores</a></p>
+
+<p><a href="/Pruebarutas/listas.html">listas</a></p>
+  </body>
+</html>

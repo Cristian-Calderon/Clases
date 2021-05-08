@@ -1,0 +1,179 @@
+/* Selectores 
+
+la sintaxis Css es asi:
+
+selector{
+    propiedad1: valor1;
+    propiedad2: valor2; 
+}
+
+1. Selectores simples (una palabra)
+    h1 {}
+
+2. Selectores compuestos (más de una palabra)
+    h1 span {}
+
+3. Selectores con operadores
+    h1 + span {}
+
+4. Pseudoclases
+*/
+
+/* Selectores simples: etiqueta, tipo o elemento 
+
+Son etiquetas HTML
+
+*/
+
+
+/* p{
+    color: blue; 
+}*/
+
+/* Selectore simples: clases
+Se indican con un punto y el nombre de la clase
+
+* No pueden comenzar con numero
+* Pueden comenzar con - o _
+* Pueden tener  :
+* Pueden ser de una letra
+
+*/
+
+/* .title{
+    color: green;
+} */
+
+/* .description{
+    color: red;
+} */
+
+/* 
+.red{
+    color:red;
+} */
+
+/* .green{
+    color: green;
+} */
+/* 
+.purple{
+    color: purple;
+} */
+
+/* .button{
+    display: inline-block;
+    padding:.75em 2em;
+    background: steelblue;
+    color: white;
+    border-radius: .25em;
+} */
+
+/* Selectores simples: id (identificador unico) */
+
+/* #title{
+    background: pink;
+} */
+
+
+/* Selectores compuestos : agrupados */
+
+h1,.button, p{
+    /* color: red; */
+}
+
+/* Selectores compuestos: combinados */
+
+h1.title{
+    /* color: green; */
+}
+
+/* Selectores compuestos: descendientes */
+/* Los selectores descendientes tienen espacios entre los selectores */
+
+body span{
+    /* color: blue; */
+}
+
+
+/* Selectores con operadores * > + ~ */
+
+/* Selector universal */
+*{
+    /* margin: 0;
+    font-size: 1em;
+    color: orange;
+    background: orange;  */
+}
+
+/* Hijo directo > */
+p > span{
+    color: green;
+    background: yellow;
+}
+
+/* Hermano siguiente + */
+p + div{
+    border: 1px solid;
+}
+
+/* Hermanos siguientes ~ */
+p ~ div{
+    background: yellow;
+}
+
+/* Selectores de atributo 
+Usan []
+[attr="value"]
+[attr]
+*/
+
+/* [type="text"]{
+    border: 1px solid red;
+}
+
+[type="number"]{
+    border: 1px solid green;
+}  */
+
+
+
+[required]{
+    border: 1px solid red;
+}
+
+[type="submit"]{
+    background: steelblue;
+    border: none;
+    color: white;
+} 
+
+
+
+
+/* Selector de Atributos con Comodines 
+
+Comienza con [attr^="value"]
+*/
+
+[type^="sub"]{
+    background: green;
+}
+
+a[href^="http://"]{
+    border-bottom: 1px dashed red;
+    color: white;
+}
+
+/* Termina con [attr$="value"] */
+
+a[href$=".mp4"]{
+    background: red;
+}
+
+
+/* Contiene [attr*="value"] */
+a[href*="team"]{
+    color: blue;
+    background: yellow;
+}

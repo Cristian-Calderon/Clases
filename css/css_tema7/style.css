@@ -1,0 +1,107 @@
+/* Fondos (background) 
+ *  
+ *  background es un shorthand.
+ * 
+ *  :background:red;
+ *  :background-color:red; la forma recomendada
+ * */
+
+
+h1{
+  /* background: yellow; */
+}
+
+/*  
+html, body{
+  height: 100%;
+  margin: 0;
+}
+*/
+
+body{
+  /* background-color: #eee; */
+  /* background-image: url(sddefault.jpg); */
+  /* background-repeat:no-repeat; */
+  /* background-repeat: repeat-y; */
+  /* background-repeat: repeat-x; */
+}
+
+/* 7.2 - background-size background-position
+ * son para imagenes ambos
+ *
+ *
+ * */
+
+ 
+body{
+  /* background-size: 800px; */
+  
+  /* background-size: contain: | cover: */
+
+  /* background-image: url(;https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80) */
+  /* background-size: contain; hace que la imagen se agrande y se achique  */
+  /* background-size: cover; hace que la imagen llene toda la pagina */
+
+ /* 7.3 - background-position: ; */
+
+  /* background-size: 200px; */
+  /* background-position: 200px 500px; */
+
+  /* para centrar una imagen  */
+  /* background-position: center center ; */
+
+  /* background-position: center bottom; para centrar abajo
+   * background-position: right bottom; para derecha abajo 
+   *  
+   * */
+
+  /* background-position: right 20px bottom 20px; */
+}
+ 
+
+/* 7.4 background-clip y background-origin */
+
+  
+/* .box{
+  width: 600px;
+  height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+  background-size: cover;
+  margin: 100px auto;
+  border: 24px solid;
+  border-color: rgb(12, 7, 7) rgb(73, 36, 36);
+  background-clip: content-box;
+  padding: 50px;
+  box-shadow: 0 10px 30px 0 rgb(95, 95, 95);
+  background-origin: content-box;
+  background-attachment: fixed;
+
+}
+ */
+
+
+/* 7.5 background attachment */
+
+/*
+ .box{
+  width: 600px;
+  height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+  margin: 100px auto;
+  background-attachment: fixed;
+  background-size: 1500px;
+
+ }
+*/
+
+ /*  
+body { 
+  background-image: url(https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+  background-attachment: fixed;
+  background-size: 1500px;
+
+}
+*/ 
+
+
+

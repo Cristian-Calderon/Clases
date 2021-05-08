@@ -1,0 +1,235 @@
+
+
+/* tema 8 Color
+ *
+ *  frente (color) y fondo (background-color)
+ *
+ * */
+
+body{
+  background-color: black;
+  color: pink;
+}
+
+h1{
+  /* border: 1px solid; */
+  /* box-shadow: 5px 5px 5px currentColor; */
+}
+
+p{
+  color: lime;
+}
+
+a{
+  color: currentColor;
+}
+
+
+/* Color keyword */
+
+body{
+  background-color: rebeccapurple;
+  color: transparent;
+}
+
+/* 8.3 Modo de color Rgb
+ *
+ *  Existen dos modos de color basico
+ *  Aditivo (la suma da blanco)
+ *      RGB(red, green, blue)
+ *  Sustractivo (la suma da negro)
+ *      CMYK (cyan, magenta,yellow, black)
+ *
+ *
+ *  En el modo RGB tenemos 8 bits de color, significa que cada canal tiene
+ *  2^8 variaciones posibles (256) que comienzan en 0 y terminan en 255. 
+ *
+ *  R(255) G(255) B(255) ~ 16.5 millones de colores.
+ *
+ *  la notacion: rgb(0-255, 0-255, 0-255)
+ *
+ * */
+
+body{
+  background-color: rgb(255, 0, 0);     /* R */
+  background-color: rgb(0, 255, 0);     /* G */
+  background-color: rgb(0, 0, 255);     /* B */
+  background-color: rgb(0, 255, 255);   /* C */
+  background-color: rgb(255, 255, 0);   /* M */ 
+  background-color: rgb(255, 0, 255);   /* Y */
+  background-color: rgb(0, 0, 0);       /* K */
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(128, 128, 128);
+  background-color: rgb(128, 128 ,0)
+  
+}
+
+h1{
+  color: rgba(255, 255, 255, .1);
+}
+
+/* Notacion hexadecimal 
+ * 
+ * 0 1 2 3 4 5 6 7 8 9 A B C D E F 
+ *
+ *
+ * rgb(255,0,0)= #FF0000
+ * rgb(0,255,255)= #00FFFF
+ * rgb(0,0,255)= #0000FF
+ * rgb(0,0,0)= #000000
+ * rgb(255,255,255)=#FFFFFF
+ * rgb(128, 128, 128)= #808080
+ * 
+ * */
+
+body{
+  background-color: #FF0000;
+  background-color: #00FF00;
+  background-color: #0000FF;
+  background-color: #00FFFF;
+  background-color: #FF00FF;
+  background-color: #FFFF00;
+  background-color: #000000;
+  background-color: #FFFFFF;
+  background-color: #808080;
+  background-color: #808000;
+}
+
+
+/* 8.6 Modo de color HSL
+ * 
+ * Hue (Tono 0 a 360 grados)
+ *      Circulo cromatico
+ *      0 rojo
+ *      60 amarillo
+ * Saturation (Intensidad de color 0 gris a 100% color puro)
+ * Light (luz de 0=negro a 100%=blanco)
+ *
+ *
+ * */
+body{
+  background-color: hsl(200, 80%,40%,1);
+}
+
+/*  8.7 Degradados Lineales
+ *
+ *  1. background-image: linear-gradient(color1, color2, colorn)
+ *
+ *  2. background-image: linear-gradient(color1 stop, color2 stop, color3 stop)
+ *  el stop es opcional es para parar el color
+ *
+ *  3. background-image: linear-gradient([angle], color1 [stop], color2 [stop])
+ *  Con angulo
+ *  */
+
+
+body,html{
+  height: 100%;
+  margin: 0; 
+
+}
+
+
+
+body{
+  background-image: linear-gradient(yellow 25%, red 25%, red 60%, green 60%);
+  background-image: linear-gradient(to bottom right, yellow,red);
+  /* background-repeat: no-repeat; */
+  /* background-size: 100px 50px; */
+}
+
+/* Degradados radiales
+ * 
+ * 1. background-image: radial-gradient(color1, color2, color3)
+ *
+ *
+ * 2. background-image: radial-gradient(color1 [stop], color2 [stop], color3 [stop])
+ *
+ * 
+ * 3. background-image: radial-gradient([at x y], color1 [stop], color2 [stop], color3 [stop])
+ *
+ *
+ * 4. background-image: radial-gradient([size shape] [at x y], color1 [stop], color2 [stop], color3 [stop])
+ *
+ * Palabras clave para indicar el size
+ *      
+ *      closest-side El lado mas cercano
+ *      farthest-side El lado mas lejano
+ *      closest-corner La esquina mas cercana
+ *      farthest-corner La esquina mas lejana
+ * */
+
+body{
+  background-image: radial-gradient(yellow, red);
+  background-image: radial-gradient(yellow 50%, red 50%);
+  background-image: radial-gradient(at 0 100%, yellow 50%, red 50%);
+  background-image: radial-gradient(200px at 50% 50%, yellow 50%, red 50%);
+  background-image: radial-gradient(closest-corner circle at 50% 50%, yellow 50%, red 50%);
+  background: none;
+}
+
+
+.box{
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  margin: 50px auto;
+}
+
+
+
+.box{
+  background-image: radial-gradient(farthest-corner at 0 0, yellow, red );
+  /* background-size: 200%; */
+}
+
+
+/* degrados repetidos
+ *
+ * */
+
+
+.box{
+  background-image: radial-gradient(yellow,red);
+  /* background-size: 20% 20%; */
+  background-image: repeating-radial-gradient(white 0, white 5%, black 5%, black 10%);
+
+  background-image: repeating-linear-gradient(white 0, white 5%, black 5%, black 10%);
+}
+
+body{
+  background: #222;
+}
+
+/* Ejercicio de Ying-Yang */
+
+.ying-yang{
+    --size: 200px;
+    --size2: calc(var(--size)/2);
+
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 50% auto;
+
+    background-image: 
+        radial-gradient(var(--size2) circle at 50% 25%, black 10%,transparent 10%),
+        /* circulo negro little  */
+        radial-gradient(var(--size2) circle at 50% 25%, white 50%,transparent 50%),
+        /* circulo blanco superior */
+        radial-gradient(var(--size2) circle at 50% 75%, white 10%,transparent 10%),
+        /* circulo blanco little*/
+        radial-gradient(var(--size2) circle at 50% 75%, black 50%,transparent 50%),
+        /* circulo negro inferios */
+        linear-gradient(to right, white 50%, black 50%);
+        /* divide a la mitad en blanco y negro*/
+        
+}
+
+
+
+
+
+
+

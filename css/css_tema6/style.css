@@ -1,0 +1,224 @@
+/* Pseudoclases  
+ *
+ * Permiten seleccionar elementos segun su estado o alguna condicion.
+ * Se indican con los dos puntos :
+ *
+ * */
+ 
+/*
+:hover{
+  background-color:yellow ;
+}
+*/
+
+/*  h1:hover{ */
+  /* background: yellow; */
+/* } */
+/* h1  :hover{ */
+  /* background: yellow; */
+/*} */
+/* Cualquier descendiente cuando hay un espacio como en h1_:hover */
+
+/* El primer pseudoclase ejemplo */
+
+:root{
+  --color:pink;
+}
+
+h1{
+  background: var(--color);
+}
+
+
+/* :hover :active :visited  */
+
+
+.box{
+  background: yellow;
+  width: 400px;
+  height: 250px;
+  transition: all .3s;
+}
+
+.box p{
+  /* display: none; */
+}
+
+.box:hover p{
+  /* display: block; */
+}
+
+.box:hover { 
+  /* background: pink; */
+  /* width: 300px; */
+  /* height: 180px; */
+}
+
+a:active{
+  color: red;
+}
+
+a:visited{
+  color: green;
+}
+
+/* :target :not : :empty */
+
+.secreto{
+ display: none; 
+} 
+.secreto:target{
+  display: block;
+}
+
+
+/* Ejemplo de Not */
+
+
+
+
+/*
+p:not(.p2){
+
+  color: red;
+}
+
+p{
+  margin: 0;
+}
+p:not(:last-child){
+  margin-bottom: 1em;
+}
+*/
+
+/*
+div{
+  background: yellow;
+  padding: 1em;
+  width: 200px;
+}
+*/
+
+/* elemento empty */
+
+/*
+div:empty{
+  padding: 0;
+}
+*/
+
+/* :first-child :last-child */
+
+div :last-child{
+  /* background: yellow; */
+}
+
+/* :first-of-type :last-of-type */
+p:first-of-type{
+  /* background: yellow; */
+}
+
+
+/* Lecccion 6.5 :nth-child()  :nth-last-child() 
+ *
+ *  :nth-child(even) 
+ *  Para seleccionar todos los pares
+ *  nth-last-child(odd)  
+ *  Para seleccionar todos los impares
+ *
+ *  :nth-child(x) 
+ *  Sirve para marcar su posicion con numeros desde el principio.
+ *  :nth-last-child(x)
+ *  Sirve para marcar su posicion con un numero desde el final.
+ *
+ *  :nth-child(Xn)
+ *  :nth-last-child(Xn)
+ *  :nth-child(3n) lo que hace es n empieza en 0 hasta llegar al numero de alado.
+ *
+ *  :nth-child(Xn+-Y)
+ *  :nth-last-child(Xn+-Y)
+ * */
+
+p:nth-child(even){
+  /* background: yellow; */
+}
+
+p:nth-child(odd){
+  /* background: green; */
+}
+
+p:nth-child(5){
+  /* background: red; */
+}
+
+p:nth-last-child(2){
+  /* background: pink; */
+}
+
+p:nth-child(3n){
+  /* background: blue; */
+}
+
+p:nth-last-child(2n+1){
+  /* background: yellow; */
+}
+
+/* Trucos CSS 
+ *  
+ *  Encontrar los primeros X elementos
+ *  Encontrar los ultimos x elementos
+ *
+ * * */
+ 
+p:nth-child(-n + 5){
+  /* background: yellow; */
+}
+
+p:nth-last-child(-n +5){
+  /* background: yellow; */
+}
+
+ /* Seleccionar los elementos a partir de un numero X */
+
+p:nth-child(n + 5){
+  /* background: blue; */
+}
+
+p:nth-last-child(n + 5){
+  /* background: yellow; */
+}
+
+
+/* Seleccionar todos los elementos pares a partir del 5to */
+
+p:nth-child(n + 5):nth-child(even){
+  /* background: yellow; */
+}
+
+
+/* los otros muy parecidos elementos son:
+ *  :nth-of-type()  :nth-last-of-type()
+ *
+ *
+ * */
+
+.p:nth-child(3){
+  background: yellow;
+}
+
+p:nth-of-type(3){
+  background: lime;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+:root{
+  --width: 400px;
+  --height: 250px;
+  --background: yellow;
+  --border:50px;
+}
+
+.box{
+  width: var(--width);
+  height: var(--height);
+  background: var(--background);
+  /* border: 1px solid black; */
+
+  /*  shorthand es una propiedad que agrupa otras propiedades. 
+   *    border-width: 
+   *    border-style: 
+   *    border-color: 
+   *  */
+  /* border-width: 4px 8px 16px 32px; */
+  /* border-style: solid dashed dotted double; */
+  /* border-color: black blue red brown; */
+
+  /* solid: es un marcado solido.
+   * dashed: es una linea segmentada.
+   * dotted: es una linea punteada.
+   * double: doble linea.
+   * */
+  color: red;
+  /* border-top-width: 20px;    */
+   /* border-top-style: dashed; */
+   /* border-top-color: black; */
+   /* Todos estos 3 se a agregan con el border-top:   */
+   border-top: 20px dashed black;
+
+   /* border-right-width: 10px; */
+   /* border-right-style: solid; */
+   /* border-right-color: red; */
+   border-right: 10px solid red;
+
+
+   /* border-bottom-width: 15px; */
+   /* border-bottom-style: double; */
+   /* border-bottom-color: blue; */
+   border-bottom: 15px double blue;
+ 
+
+   /* border-left-width: 30px; */
+   /* border-left-style: dotted; */
+   /* border-left-color: purple; */
+   border-left: 30px dotted purple;
+
+
+
+}
+
+
+
+/*  para hacer un triangulo*/ 
+h1{
+  border: 20px solid;
+  border-color: transparent transparent transparent red;
+  padding: 0;
+}
+ 
+
+
+
+  /* 5.2 border-redius */
+
+
+
+.box-2{
+   width: var(--width);
+  height: var(--height);
+  background: var(--background);
+  border: 1px solid;
+  /* border-radius: 50%; */
+  /* border-top-left-radius: 40px; */
+  /* border-top-right-radius: 80px; */
+  /* border-bottom-right-radius: 120px; */
+  /* border-bottom-left-radius: 160px; */
+
+
+    /* border-radius: x y  */
+  /* border-top-left-radius: 100px 200px; */
+  /* border-top-right-radius: 50px 20px; */
+  /* border-bottom-right-radius: 80px 120px; */
+  /* border-bottom-left-radius: 200px 120px; */
+
+
+  /* border-radius: x x x x / y y y y */
+  /* border-radius: 100px 50px 80px  / 200px 20px 120px 120px; */
+
+  border-radius: 80px / 110px;
+  background: red;
+  border: none;
+  padding: 0.1px;
+
+
+
+}
+
+.box-3{
+  width: 100px;
+  height: 100px;
+  background:red;
+  border-radius: 50%;
+  
+}
+/* logo de youtube. */
+.play{
+  width: 150px;
+  height: 150px;
+  border: 75px solid;
+  border-color: transparent;
+  border-left-color: white;
+  margin: 50px auto 50px 160px;
+  transform: scaleY(0.65);
+}
+
+
+  /* Propiedad Outline */
+
+       
+.box-4{
+  width:var(--width);
+  height: var(--height);
+  background: var(--background);
+  border: 5px solid black;
+  outline: 10px solid red ;
+}
+
+/* Propiedad box-shadow 
+ * es una copia.
+ * box-shadow: h-offset v-offset blur spred color | inset;
+ * h-offset: que tanto se va mover en horizontal.
+ * v-offset: que tanto se va mover en vertical.
+ * blur: el difuminado.
+ * spred: que tanto va creecer.
+ * color: obviamente color.
+ *  | barra es opcional
+ * */
+
+  body{
+    background: #222;
+  }
+
+  .circle{
+    width: 200px;
+    height: 200px;
+    background: rgb(192, 56, 56);
+    margin: 100px auto;
+    border-radius: 50%;
+    box-shadow: -15px -15px 10px 0 rgba(0, 0, 0, .5) inset,
+    5px 5px 5px 0px rgba(255, 255, 255, 0.3) inset,
+    5px 5px 20px rgba(255,255, 255, .1);
+
+
+    /* box-shadow: 400px 0px 20px -20px red, 800px 0 blue, 200px 200px, 600px 200px, 0 400px, 400px 400px, 800px 400px; */
+
+    
+  
+  }
+
+
+
+
+
+
+  
